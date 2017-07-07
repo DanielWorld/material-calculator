@@ -20,7 +20,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
@@ -33,13 +33,13 @@ allprojects {
 apply plugin: "com.android.application"
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.rahul.material.calculator"
-        minSdkVersion 10
-        targetSdkVersion 22
+        minSdkVersion 15
+        targetSdkVersion 25
         versionCode 2
         versionName "1.1"
     }
@@ -90,6 +90,6 @@ repositories {
 
 dependencies {
     compile files("arity-2.1.2.jar")
-    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.nineoldandroids:library:2.4.0'
 }

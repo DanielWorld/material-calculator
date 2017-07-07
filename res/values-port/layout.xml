@@ -17,4 +17,5 @@
 
 <resources>
     <item name="activity_calculator" type="layout">@layout/activity_calculator_port</item>
+    <item name="fragment_calculator" type="layout">@layout/fragment_calculator_port</item>
 </resources>
