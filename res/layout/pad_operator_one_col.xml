@@ -34,7 +34,7 @@
         android:id="@+id/clr"
         style="@style/PadButtonStyle.Operator.Text"
         android:contentDescription="@string/desc_clr"
-
+        android:textSize="10sp"
         android:text="@string/clr"
         android:visibility="gone" />
 
