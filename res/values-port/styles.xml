@@ -19,25 +19,27 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="DisplayEditTextStyle.Formula">
-        <item name="android:paddingTop">48dip</item>
-        <item name="android:paddingBottom">24dip</item>
+        <item name="android:paddingTop">16dip</item>
+        <item name="android:paddingBottom">16dip</item>
         <item name="android:paddingLeft">16dip</item>
         <item name="android:paddingStart">16dip</item>
         <item name="android:paddingRight">16dip</item>
         <item name="android:paddingEnd">16dip</item>
-        <item name="minTextSize">36sp</item>
-        <item name="maxTextSize">64sp</item>
+        <item name="minTextSize">12sp</item>
+        <item name="maxTextSize">24sp</item>
         <item name="stepTextSize">8sp</item>
+        <item name="android:maxLines">5</item>
     </style>
 
     <style name="DisplayEditTextStyle.Result">
-        <item name="android:paddingTop">24dip</item>
-        <item name="android:paddingBottom">48dip</item>
+        <item name="android:paddingTop">16dip</item>
+        <item name="android:paddingBottom">16dip</item>
         <item name="android:paddingLeft">16dip</item>
         <item name="android:paddingStart">16dip</item>
         <item name="android:paddingRight">16dip</item>
         <item name="android:paddingEnd">16dip</item>
-        <item name="android:textSize">36sp</item>
+        <item name="minTextSize">12sp</item>
+        <item name="maxTextSize">24sp</item>
     </style>
 
     <style name="PadButtonStyle.Advanced">
@@ -49,7 +51,7 @@
 
     <style name="PadButtonStyle.Numeric">
         <item name="android:layout_margin">4dip</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">28sp</item>
     </style>
 
     <style name="PadButtonStyle.Numeric.Equals">
@@ -57,7 +59,7 @@
     </style>
 
     <style name="PadButtonStyle.Operator">
-        <item name="android:layout_margin">8dip</item>
+        <item name="android:padding">4dip</item>
         <item name="android:textSize">23sp</item>
     </style>
 
