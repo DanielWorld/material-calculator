@@ -27,7 +27,7 @@
         android:id="@+id/del"
         style="@style/PadButtonStyle.Operator.Text"
         android:contentDescription="@string/desc_del"
-
+        android:textSize="10sp"
         android:text="@string/del" />
 
     <Button
