@@ -31,7 +31,7 @@
         android:editable="false"
         android:inputType="none"
         android:textColor="@color/display_formula_text_color"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="false" />
 
     <com.android.calculator2.CalculatorEditText
         android:id="@+id/result"
@@ -42,6 +42,6 @@
         android:editable="false"
         android:inputType="none"
         android:textColor="@color/display_result_text_color"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="false" />
 
 </RelativeLayout>

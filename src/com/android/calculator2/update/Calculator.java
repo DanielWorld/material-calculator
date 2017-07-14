@@ -198,10 +198,10 @@ public abstract class Calculator extends Fragment
 
                 if (position == 1) {
                     if (mPadContainer != null)
-                        mPadContainer.setPadCosXY(130, 690);
+                        mPadContainer.setPadCosXY(130, 600);
                 } else {
                     if (mPadContainer != null)
-                        mPadContainer.setPadCosXY(700, 690);
+                        mPadContainer.setPadCosXY(700, 600);
                 }
 
             }

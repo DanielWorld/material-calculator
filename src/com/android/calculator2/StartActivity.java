@@ -58,6 +58,9 @@ public class StartActivity extends FragmentActivity implements TouchInterceptorL
     private float initialTouchX, initialTouchY;
     private float moveTouchX, moveTouchY;
     private float lastTouchX, lastTouchY;
+    // 기준점 x, y
+    private float standardX = 0;
+    private float standardY = 0;
 
     @Override
     public void onTouchDown(float x, float y) {
@@ -72,16 +75,19 @@ public class StartActivity extends FragmentActivity implements TouchInterceptorL
         moveTouchY = y - initialTouchY;
         Log.d("OKAY", "Move : " + moveTouchX + " : " + moveTouchY);
 
-        animatePopupView(contentFrame, (int) (moveTouchX + lastTouchX), (int) (moveTouchY + lastTouchY));
+        animatePopupView(contentFrame, (int) (moveTouchX + standardX), (int) (moveTouchY + standardY));
 //         TODO: 애니메이션의 경우 시작시 이전 애니메이션 기록과 상관없이 무조건 0, 0 을 기준으로 이동한다!
 //        animatePopupView(contentFrame, 50, 50);
     }
 
     @Override
     public void onTouchUp(float x, float y) {
-        lastTouchX = x - initialTouchX;
-        lastTouchY = y - initialTouchY;
+        lastTouchX = x;
+        lastTouchY = y;
         Log.i("OKAY", "Up : " + lastTouchX + " : " + lastTouchY);
+
+        standardX += (lastTouchX - initialTouchX);
+        standardY += (lastTouchY - initialTouchY);
     }
 
     public void animatePopupView(View v, float x, float y) {

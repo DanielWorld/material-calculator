@@ -107,7 +107,7 @@ public class TouchInterceptorLinearLayout extends LinearLayout {
 
     // pad cos 의 x, y 좌표 (opened 와 closed 되었을 때의 크기가 다르다)
     private int padCosX = 700;
-    private int padCosY = 690;
+    private int padCosY = 600;
 
     /**
      * pad cos 의 x, y 좌표 설정
