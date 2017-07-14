@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/display"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="150dp"
     android:background="@color/display_background_color"
     android:elevation="4dip">
 
@@ -27,7 +27,7 @@
         android:id="@+id/formula"
         style="@style/DisplayEditTextStyle.Formula"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="95dp"
         android:editable="false"
         android:inputType="none"
         android:textColor="@color/display_formula_text_color"
@@ -37,7 +37,7 @@
         android:id="@+id/result"
         style="@style/DisplayEditTextStyle.Result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_below="@id/formula"
         android:editable="false"
         android:inputType="none"
