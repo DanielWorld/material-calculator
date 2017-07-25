@@ -260,30 +260,31 @@ public abstract class Calculator extends Fragment
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.eq:
-                onEquals();
-                break;
-            case R.id.del:
-                onDelete();
-                break;
-            case R.id.clr:
-                onClear();
-                break;
-            case R.id.fun_cos:
-            case R.id.fun_ln:
-            case R.id.fun_log:
-            case R.id.fun_sin:
-            case R.id.fun_tan:
-                // Add left parenthesis after functions.
-                mFormulaEditText.append(((Button) v).getText() + "(");
-                break;
-            default:
-                mFormulaEditText.append(((Button) v).getText());
-                break;
-        }
-    }
+		if (v == null) return;
 
+		int id = v.getId();
+
+		if (id == R.id.eq) {
+			onEquals();
+		}
+		else if (id == R.id.del) {
+			onDelete();
+		}
+		else if (id == R.id.clr) {
+			onClear();
+		}
+		else if (id == R.id.fun_cos ||
+				id == R.id.fun_ln ||
+				id == R.id.fun_log ||
+				id == R.id.fun_sin ||
+				id == R.id.fun_tan) {
+			// Add left parenthesis after functions.
+			mFormulaEditText.append(((Button) v).getText() + "(");
+		}
+		else {
+			mFormulaEditText.append(((Button) v).getText());
+		}
+    }
 
     @Override
     public boolean onLongClick(View v) {

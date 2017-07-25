@@ -16,6 +16,8 @@
 
 package com.android.calculator2;
 
+import com.android.calculator2.update.Calculator;
+
 import org.javia.arity.Symbols;
 import org.javia.arity.SyntaxException;
 import org.javia.arity.Util;
