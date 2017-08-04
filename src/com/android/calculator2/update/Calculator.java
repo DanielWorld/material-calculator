@@ -124,20 +124,20 @@ public abstract class Calculator extends Fragment
             mEqualButton = v.findViewById(R.id.pad_operator).findViewById(R.id.eq);
         }
 
-        v.findViewById(R.id.fun_cos).setOnClickListener(this);
-        v.findViewById(R.id.fun_ln).setOnClickListener(this);
-        v.findViewById(R.id.fun_log).setOnClickListener(this);
-        v.findViewById(R.id.fun_sin).setOnClickListener(this);
-        v.findViewById(R.id.fun_tan).setOnClickListener(this);
+//        v.findViewById(R.id.fun_cos).setOnClickListener(this);
+//        v.findViewById(R.id.fun_ln).setOnClickListener(this);
+//        v.findViewById(R.id.fun_log).setOnClickListener(this);
+//        v.findViewById(R.id.fun_sin).setOnClickListener(this);
+//        v.findViewById(R.id.fun_tan).setOnClickListener(this);
 
-        v.findViewById(R.id.op_fact).setOnClickListener(this);
-        v.findViewById(R.id.const_pi).setOnClickListener(this);
-        v.findViewById(R.id.const_e).setOnClickListener(this);
-        v.findViewById(R.id.lparen).setOnClickListener(this);
-        v.findViewById(R.id.rparen).setOnClickListener(this);
+//        v.findViewById(R.id.op_fact).setOnClickListener(this);
+//        v.findViewById(R.id.const_pi).setOnClickListener(this);
+//        v.findViewById(R.id.const_e).setOnClickListener(this);
+//        v.findViewById(R.id.lparen).setOnClickListener(this);
+//        v.findViewById(R.id.rparen).setOnClickListener(this);
 
-        v.findViewById(R.id.op_sqrt).setOnClickListener(this);
-        v.findViewById(R.id.op_pow).setOnClickListener(this);
+//        v.findViewById(R.id.op_sqrt).setOnClickListener(this);
+//        v.findViewById(R.id.op_pow).setOnClickListener(this);
         v.findViewById(R.id.op_div).setOnClickListener(this);
         v.findViewById(R.id.op_mul).setOnClickListener(this);
         v.findViewById(R.id.op_sub).setOnClickListener(this);
